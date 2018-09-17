@@ -1,9 +1,11 @@
 package io.github.dasspike.dailyquote;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.ViewGroup;
 
 class QuotePagerAdapter extends FragmentStatePagerAdapter {
 
@@ -38,5 +40,13 @@ class QuotePagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         return CATEGORIES[position];
+    }
+
+    @Override
+    public void setPrimaryItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        super.setPrimaryItem(container, position, object);
+
+        QuoteFragment fragment = (QuoteFragment) object;
+        fragment.setActionBarTitle();
     }
 }

@@ -39,6 +39,7 @@ public class QuoteFragment extends Fragment {
     private RequestController requestController;
     private SwipeRefreshLayout swipeRefreshLayout;
     private String url;
+    private String title;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -172,9 +173,14 @@ public class QuoteFragment extends Fragment {
      * @param title The text the action bar should display.
      */
     private void setActionBarTitle(String title) {
-        // TODO: Set title regarding ViewPager position
-        // Currently the fragment that is not yet visible in the ViewPager but already loaded
-        // can set the action bar title
+        this.title = title;
+        setActionBarTitle();
+    }
+
+    /**
+     * Sets the title of the action bar to the title of the current quote.
+     */
+    public void setActionBarTitle() {
         AppCompatActivity activity = (AppCompatActivity) getActivity();
         if (activity != null) {
             ActionBar actionBar = activity.getSupportActionBar();
