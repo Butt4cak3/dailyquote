@@ -1,0 +1,27 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Daily Quote</string>
+
+    <!-- QuoteViewer -->
+    <string name="swipe_to_refresh">Swipe down to refresh.</string>
+    <string name="quote_background_desc">Daily quote background</string>
+
+    <!-- Drawer -->
+    <string name="quotes">Quotes</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+
+    <!-- Errors -->
+    <string name="no_connection">No internet connection.</string>
+    <string name="invalid_response">Invalid response.</string>
+    <string name="quote_invalid_format">Invalid quote format.</string>
+    <string name="_404_not_found">404 Not Found.</string>
+    <string name="_429_too_many_requests">429 Too Many Requests.</string>
+    <string name="timeout">Timeout.</string>
+
+    <!-- Links -->
+    <string name="uses_api">This app uses the %1$s quote API.</string>
+    <string name="theysaidso_link">
+        <a href="https://theysaidso.com">theysaidso.com</a>
+    </string>
+</resources>

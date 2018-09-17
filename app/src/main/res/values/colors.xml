@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565c0</color>
+    <color name="colorPrimaryDark">#003c8f</color>
+    <color name="colorAccent">#66bb6a</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <!-- TODO: adjust colors of all UI elements -->
+</resources>
